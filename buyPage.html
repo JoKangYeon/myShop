@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>주문완료</title>
+    <link href="buyPageCSS.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div>
+    <h2 style="display: inline; padding-right: 3px; color: green">주문완료 </h2><h2 style="display: inline"> 되었습니다.</h2>
+    </div>
+    <div>
+        <div id="firstBbox">
+            주문자:
+        </div>
+        <div id="secondBbox">
+            배송지:
+        </div>
+        <div id="thirdBbox">
+            구매목록:
+        </div>
+        <div id="fourthBbox">
+            Total price:
+        </div>
+        <div id="fifthBbox" style="">
+            결제수단: 만나서 결제
+        </div>
+    </div>
+    <div>
+        <a href="loginMain.html">
+            <button id="keepBtn" type="button" onclick="orderComplete()">계속 쇼핑하기</button>
+        </a>
+    </div>
+</div>
+<script src="buyPageJS.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        makeOrder()
+    })
+</script>
+</body>
+</html>
