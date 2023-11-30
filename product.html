@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link href="./resources/css/productCSS.css" rel="stylesheet">
+</head>
+<body>
+<div class="topBox">
+    <a class="logo" href="loginMain.html">
+        <img src="./resources/images/logo.png"
+             style="margin-top: 25px; height: 25px" alt="로고">
+    </a>
+</div>
+<div class="contentBox">
+    <div class="mainBox">
+        <div class="leftContainer">
+            <div id="imageBox">
+                <img id="prodImg" src="./resources/images/coat.jpg" alt="상품사진">
+            </div>
+        </div>
+        <div class="rightContainer">
+            <div class="rFirstBox">
+                <div><h2 style="margin-right: 30px">상품명 :</h2></div>
+                <div><h2 id="productName">로퍼</h2></div>
+            </div>
+            <div id="rSecondBox">
+                <div style="margin-right: 30px; margin-left: 10px"><h2>Price :</h2></div>
+                <div><h2 id="productPrice">KRW 50,000</h2></div>
+            </div>
+            <div id="rThirdBox">
+                <button type="button" style="background-color: steelblue" onclick="buyNow()">구매하기</button>
+            </div>
+            <div id="rFourthBox">
+                <button type="button" onclick="addList()">쇼핑백에 추가</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./resources/js/productJS.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setProdPage()
+    })
+</script>
+</body>
+</html>

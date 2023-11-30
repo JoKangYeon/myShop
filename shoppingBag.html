@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>쇼핑백</title>
+    <link href="./resources/css/shoppingBagCSS.css" rel="stylesheet">
+</head>
+<body>
+<div class="topBox">
+    <a class="logo" href="loginMain.html">
+        <img src="./resources/images/logo.png"
+             style="margin-top: 25px; height: 25px" alt="로고">
+    </a>
+</div>
+<div class="titleBox">
+    <h1>Selected List</h1>
+</div>
+<div class="midBox">
+    <div id="midInBox"></div>
+</div>
+<div class="bottomBox">
+    <div class="bottomInBox">
+        <div class="priceBox">Total Price:  </div>
+    </div>
+    <div class="bottomInBox">
+        <div class="buttonBox">
+            <div><button type="button" id="selectAllBtn" style="margin-right: 20px; background-color: darkgreen">전체선택</button></div>
+            <a href="loginMain.html"><div><button type="button" id="backBtn" style="margin-right: 20px; background-color: black">돌아가기</button></div></a>
+            <div><button type="button" id="buyBtn">구매하기</button></div>
+        </div>
+    </div>
+</div>
+<script src="./resources/js/productJS.js"></script>
+<!--<script src="shoppingBagJS.js"></script>-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setCart()
+    })
+</script>
+</body>
+</html>

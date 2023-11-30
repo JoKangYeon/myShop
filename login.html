@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    div{
+        /*border: 1px solid red;*/
+    }
+
+    body{
+        background-color: white;
+        margin: 0;
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .logo{
+        line-height: 60px;
+        margin-top: 20px;
+    }
+    #divLogo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #mid div > input {
+        width: 300px;
+        height: 50px;
+    }
+
+    #mid {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #loginBtn{
+        width: 300px;
+        height: 40px;
+        background-color: steelblue;
+        color: white;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+<div id="parentMid">
+    <div id="divLogo">
+        <a class="logo" href="index.html">
+            <img src="./resources/images/logo.png" alt="로고" height="30px">
+        </a>
+    </div>
+    <div id="mid">
+        <h2>로그인</h2>
+        <form action="#" method="get">
+            <div>
+                <label for="userId"></label>
+                <input type="text" id="userId" name="userId" placeholder="ID" spellcheck="false" required>
+            </div>
+            <div>
+                <label for="userPw"></label>
+                <input style="margin-bottom: 15px" type="password" id="userPw" name="userPw" placeholder="Password" required>
+            </div>
+            <div id="loginMessage" style="display: none; color: red"></div>
+        <button id="loginBtn" type="button">Login</button>
+        </form>
+        <p style="margin-bottom: 0"><a href="signup.html" style="text-decoration: none; font-size: 13px">SignUp</a></p>
+        <p style="margin-top: 3px"><a href="#" id="openPopup" style="text-decoration: none; font-size: 13px">Forgot your password?</a></p>
+    </div>
+</div>
+<script src="./resources/js/loginJS.js"></script>
+</body>
+</html>
